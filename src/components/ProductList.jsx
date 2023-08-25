@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 
 function ProductList() {
   // Sử dụng useSelector để nhận state
-  const product = useSelector((state) => state.product);
+  const products = useSelector((state) => state.products);
   return (
     <div>
       <h2>Product List</h2>
@@ -17,7 +17,7 @@ function ProductList() {
           </tr>
         </thead>
         <tbody>
-          {product.map((e, i) => (
+          {products.map((e, i) => (
             <tr key={i}>
               <td>{e.id}</td>
               <td>{e.name}</td>

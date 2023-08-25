@@ -3,9 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { add_product } from "../redux/action/action";
 function ProductForm() {
   // useSelector để lấy dữ liệu
-  const selectedProduct = useSelector((state) =>
-    console.log("ProductForm===>", state)
-  );
+  const selectedProduct = useSelector((state) => state.selectedProduct);
   // useDispatch để bắn action lên store
   const dispatch = useDispatch();
   // Khởi tạo state để lữu trữ dữ liệu input

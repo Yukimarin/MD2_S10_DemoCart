@@ -10,7 +10,7 @@ const productReducer = (state = initState, action) => {
     case typeAction.ADD_PRODUCT:
       return {
         ...state,
-        product: [...state.products, action.payload],
+        products: [...state.products, action.payload],
       };
     default:
       break;
